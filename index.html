@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="container">
+
+        <form id="login_form">
+            <!--Form Header-->
+            <div id="form_header">
+                <h1>Login</h1>
+            </div>
+
+            <div id="inputs">
+
+                <!--Name-->
+                <div class="input-box" requiered>
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </label>
+                </div>
+                <!--Email-->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </label>
+                </div>
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </label>
+
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueceu sua senha?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIN BUTTON -->
+            <a class="btn btn-primary btn-sm "
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" href="src/pages/home.html"
+                role="button"> Login </a>
+        </form>
+
+    </main>
+
+    <script type="text/javascript" src="src/js/script.js"></script>
+</body>
+
+</html>

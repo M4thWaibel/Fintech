@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body id="container-two">
+    <header class="header">
+        <nav class="nav">
+            <h2 id="Organization"> CashCanva </h2>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="#">Transações</a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
+                <li><a href="../../index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="mx-2 py-5">No que podemos ajudar hoje?</h1>
+        </div>
+        <div class="resume pb-5">
+            <div>
+                Entradas: R$
+                <span class="incomes">0.00</span>
+            </div>
+            <div>
+                Saídas: R$
+                <span class="expenses">0.00</span>
+            </div>
+            <div>
+                Total: R$
+                <span class="total">0.00</span>
+            </div>
+        </div>
+        <div class="newItem">
+            <div class="divDesc">
+                <label for="desc">Descrição</label>
+                <input type="text" id="desc"/>
+            </div>
+            <div class="divAmount">
+                <label for="amount">Valor</label>
+                <input type="number" id="amount" />
+            </div>
+            <div class="divType">
+                <label for="type">Tipo</label>
+                <select id="type">
+                    <option>Entrada</option>
+                    <option>Saída</option>
+                </select>
+            </div>
+            <button id="btnNew">Incluir</button>
+        </div>
+        <div class="divTable py-5">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th class="columnAmount">Valor</th>
+                        <th class="columnType">Tipo</th>
+                        <th class="columnAction"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+
+</html>
